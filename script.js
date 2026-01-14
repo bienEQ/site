@@ -6,9 +6,16 @@
 // Supabase configuration
 const SUPABASE_URL = 'https://tkhlmscolbaldgvwkyix.supabase.co';
 const SUPABASE_KEY = 'sb_publishable_m9EMVaUqKidgqtHamKdQOw_eCOlVy9O';
-const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
+let supabaseClient = null;
 
 document.addEventListener('DOMContentLoaded', function() {
+    // Initialize Supabase client
+    if (window.supabase) {
+        supabaseClient = window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
+    } else {
+        console.error('Supabase library not loaded');
+    }
+
     // Form handling
     const forms = document.querySelectorAll('form');
 
@@ -113,8 +120,16 @@ async function handleFormSubmit(e) {
     const originalText = submitBtn.textContent;
     submitBtn.textContent = 'Joining...';
 
+    if (!supabaseClient) {
+        showFormError(emailInput, 'Service unavailable. Please try again later.');
+        emailInput.disabled = false;
+        submitBtn.disabled = false;
+        submitBtn.textContent = originalText;
+        return;
+    }
+
     try {
-        const { error } = await supabase
+        const { error } = await supabaseClient
             .from('waitlist')
             .insert({ email });
 
