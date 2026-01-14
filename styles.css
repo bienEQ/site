@@ -286,7 +286,7 @@ a:hover {
 }
 
 .input::placeholder {
-    color: var(--color-neutral-400);
+    color: var(--color-neutral-500);
 }
 
 .input-lg {
@@ -318,7 +318,7 @@ a:hover {
 
 .hero-subheadline {
     font-size: var(--font-size-lg);
-    color: var(--color-neutral-600);
+    color: var(--color-neutral-700);
     margin-bottom: var(--space-3xl);
 }
 
@@ -334,7 +334,7 @@ a:hover {
 
 .form-note {
     font-size: var(--font-size-xs);
-    color: var(--color-neutral-500);
+    color: var(--color-neutral-600);
     margin-top: var(--space-md);
     margin-bottom: 0;
 }
@@ -471,7 +471,7 @@ a:hover {
 
 .dashboard-period {
     font-size: var(--font-size-xs);
-    color: var(--color-neutral-500);
+    color: var(--color-neutral-600);
 }
 
 .dashboard-content {
@@ -657,13 +657,13 @@ a:hover {
 
 .stat-label {
     font-size: var(--font-size-sm);
-    color: var(--color-neutral-600);
+    color: var(--color-neutral-700);
     margin-bottom: var(--space-md);
 }
 
 .stat-source {
     font-size: var(--font-size-xs);
-    color: var(--color-neutral-400);
+    color: var(--color-neutral-600);
     font-style: italic;
 }
 
@@ -675,7 +675,7 @@ a:hover {
 .section-intro {
     text-align: center;
     font-size: var(--font-size-lg);
-    color: var(--color-neutral-600);
+    color: var(--color-neutral-700);
     max-width: 700px;
     margin: 0 auto var(--space-5xl);
 }
@@ -713,7 +713,7 @@ a:hover {
 }
 
 .step-description {
-    color: var(--color-neutral-600);
+    color: var(--color-neutral-700);
     margin: 0;
 }
 
@@ -743,7 +743,7 @@ a:hover {
 .outcomes-list li {
     position: relative;
     padding-left: var(--space-2xl);
-    color: var(--color-neutral-700);
+    color: var(--color-neutral-800);
 }
 
 .outcomes-list li::before {
@@ -880,7 +880,7 @@ a:hover {
     padding: var(--space-md) 0;
     padding-left: var(--space-2xl);
     position: relative;
-    color: var(--color-neutral-600);
+    color: var(--color-neutral-700);
 }
 
 .fit-card li::before {
@@ -1005,7 +1005,7 @@ a:hover {
 
 .footer-tagline {
     font-size: var(--font-size-sm);
-    color: var(--color-neutral-400);
+    color: var(--color-neutral-300);
     margin: 0;
 }
 
@@ -1015,12 +1015,12 @@ a:hover {
 }
 
 .footer-links a {
-    color: var(--color-neutral-400);
+    color: var(--color-neutral-300);
     font-size: var(--font-size-sm);
 }
 
 .footer-links a:hover {
-    color: var(--color-neutral-200);
+    color: var(--color-neutral-100);
 }
 
 .footer-social {
@@ -1029,12 +1029,12 @@ a:hover {
 }
 
 .footer-social a {
-    color: var(--color-neutral-400);
+    color: var(--color-neutral-300);
     transition: color var(--transition-fast);
 }
 
 .footer-social a:hover {
-    color: var(--color-neutral-200);
+    color: var(--color-neutral-100);
 }
 
 .footer-bottom {
@@ -1043,7 +1043,7 @@ a:hover {
 
 .footer-bottom p {
     font-size: var(--font-size-xs);
-    color: var(--color-neutral-500);
+    color: var(--color-neutral-400);
     margin: 0;
 }
 
