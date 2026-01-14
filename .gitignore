@@ -1,1 +1,14 @@
-.vercel
+# macOS
+.DS_Store
+
+# Editor
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Logs
+*.log
+
+# Dependencies (if we ever add them)
+node_modules/
