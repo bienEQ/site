@@ -1156,7 +1156,8 @@ a:hover {
 
 .hero-content,
 .hero-visual {
-    animation: fadeInUp 0.8s ease-out forwards;
+    opacity: 0;
+    animation: fadeInUp 0.8s ease-out both;
 }
 
 .hero-visual {
