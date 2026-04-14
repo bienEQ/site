@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <title>About Us — Bien</title>
+    <meta name="description" content="BienEQ is the intelligence layer that makes the way people communicate measurably, meaningfully better — built at the intersection of behavioral science, AI, and human-centered design.">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="About Us — Bien">
+    <meta property="og:description" content="BienEQ is the intelligence layer that makes the way people communicate measurably, meaningfully better.">
+    <meta property="og:type" content="website">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      .team-list {
+        display: flex;
+        flex-direction: column;
+      }
+      .team-member {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: var(--space-lg, 1.5rem);
+        padding: var(--space-2xl, 3rem) 0;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      }
+      .team-member:first-child {
+        padding-top: 0;
+      }
+      .team-member:last-child {
+        border-bottom: 0;
+        padding-bottom: 0;
+      }
+      @media (min-width: 768px) {
+        .team-member {
+          grid-template-columns: 33% 1fr;
+          gap: var(--space-2xl, 3rem);
+        }
+      }
+      .team-member-meta {
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-xs, 0.25rem);
+      }
+      .team-member-meta .step-title {
+        margin: 0;
+      }
+      .team-member-title {
+        color: var(--color-neutral-600);
+        font-size: var(--font-size-base, 1rem);
+        margin: 0;
+      }
+      .team-member-body {
+        color: var(--color-neutral-700);
+        margin: 0;
+        line-height: 1.6;
+      }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <a href="/" class="logo">
+                <img src="assets/logo_36px.png" alt="Bien" height="36">
+            </a>
+            <nav class="nav">
+                <a href="/#how-it-works" class="nav-link">How It Works</a>
+                <a href="/#science" class="nav-link">The Science</a>
+                <a href="/#waitlist" class="btn btn-primary btn-sm">Join Waitlist</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-headline">About Us</h1>
+                <p class="hero-subheadline">BienEQ was built by people who've lived inside the problem. We've led organizations, scaled platforms, and designed products — and we've watched talented teams underperform, not because of strategy or skill, but because of how they communicated and interacted with each other.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team -->
+    <section class="section section-solution">
+        <div class="container">
+            <div class="team-list">
+                <div class="team-member">
+                    <div class="team-member-meta">
+                        <h3 class="step-title">Stephanie Tate</h3>
+                        <p class="team-member-title">Co-Founder &amp; CEO</p>
+                    </div>
+                    <p class="team-member-body">Former CPO with 20+ years across startups and organizations like Yahoo and Yummly. A trained contemplative educator who integrates neuroscience, emotional intelligence, and organizational psychology into frameworks that work at scale. Stephanie got the idea for BienEQ because she watched talented and smart teams struggle over preventable breakdowns.</p>
+                </div>
+                <div class="team-member">
+                    <div class="team-member-meta">
+                        <h3 class="step-title">Mickey Stretton</h3>
+                        <p class="team-member-title">Co-Founder &amp; CPO</p>
+                    </div>
+                    <p class="team-member-body">Founder of DesignPush and UpVersion Consulting, former VP of Design at Yummly, and co-founder of AllofUs — a UK design consultancy acquired by InterPublic Group. Mickey is a recognized innovator in human-centred design and design systems, now applying that expertise to the AI frontier. He ensures BienEQ doesn't just work brilliantly, but is human-first by design.</p>
+                </div>
+                <div class="team-member">
+                    <div class="team-member-meta">
+                        <h3 class="step-title">Mitchell DeYoung</h3>
+                        <p class="team-member-title">Co-Founder &amp; CTO</p>
+                    </div>
+                    <p class="team-member-body">Former CEO and CTO of a FinTech startup, with a successful exit and deep roots in large-scale data infrastructure, AI/ML, and the fintech and adtech ecosystems. Mitchell is the architect behind BienEQ's platform — the person who takes the science and makes it real, scalable, and fast.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="/" class="logo">
+                        <img src="assets/logo__inv_36px.png" alt="Bien" height="36">
+                    </a>
+                    <p class="footer-tagline">EQ analytics and coaching for workplace communication.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="about.html">About Us</a>
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="mailto:info@bieneq.com">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Bien. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="script.js"></script>
+</body>
+</html>
